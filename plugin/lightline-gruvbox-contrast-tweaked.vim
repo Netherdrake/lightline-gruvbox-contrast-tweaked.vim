@@ -1,7 +1,8 @@
-" File: lightline-gruvbox.vim
-" Description: lightline.vim theme for gruvbox colorscheme
-" Author: shinchu <shinchu@outlook.com>
-" Source: https://github.com/shinchu/lightline-gruvbox
+" File: lightline-gruvbox-contrast-tweaked.vim
+" Description: lightline.vim theme for gruvbox colorscheme, tweaked for
+" filename contrast as GruvboxContrastTweaked
+" Author: shinchu <shinchu@outlook.com> (then cludged by cheywood)
+" Source: https://github.com/cheywood/lightline-gruvbox-contrast-tweaked.vim
 
 let s:is_dark=(&background == 'dark')
 
@@ -30,9 +31,9 @@ if s:is_dark
 	let s:mono5   = '#928374'
 	let s:c_mono1 = 237
 	let s:c_mono2 = 239
-	let s:c_mono3 = 241
+	let s:c_mono3 = 243
 	let s:c_mono4 = 243
-	let s:c_mono5 = 245
+	let s:c_mono5 = 0
 
 	let s:red      = '#fb4934'
 	let s:green    = '#b8bb26'
@@ -61,9 +62,9 @@ else
 	let s:mono5   = '#928374'
 	let s:c_mono1 = 223
 	let s:c_mono2 = 250
-	let s:c_mono3 = 248
+	let s:c_mono3 = 246
 	let s:c_mono4 = 246
-	let s:c_mono5 = 244
+	let s:c_mono5 = 230
 
 	let s:red      = '#9d0006'
 	let s:green    = '#79740e'
@@ -156,4 +157,4 @@ else
 				\ [s:mono5, s:mono0, s:c_mono5, s:c_mono0]]
 endif
 
-let g:lightline#colorscheme#gruvbox#palette = s:p
+let g:lightline#colorscheme#GruvboxContrastTweaked#palette = s:p
